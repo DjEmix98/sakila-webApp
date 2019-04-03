@@ -36,10 +36,12 @@ public class Film {
 	@Column(name="rating")
 	private String rating;
 
+	@Column(name="release_year")
+	private int annoDiUscita;
 	
 	@ManyToMany
 	@JoinTable(name = "film_actor", joinColumns = @JoinColumn(name = "film_id")
-	, inverseJoinColumns = @JoinColumn(name = "attori_id"))
+	, inverseJoinColumns = @JoinColumn(name = "actor_id"))
 	private List<Actor> attori;
 
 	
@@ -50,6 +52,14 @@ public class Film {
 	private Category categoria;
 
 	
+
+	public int getAnnoDiUscita() {
+		return annoDiUscita;
+	}
+
+	public void setAnnoDiUscita(int annoDiUscita) {
+		this.annoDiUscita = annoDiUscita;
+	}
 
 	public Float getPrezzo() {
 		return prezzo;
