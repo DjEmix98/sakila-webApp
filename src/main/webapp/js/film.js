@@ -73,7 +73,8 @@ function findFilm(){
         "<p class='card-text'>Descrizione:</p><p class='card-text'>" + film.descrizione +"</P>"
         +"<p class='card-text'>Anno:"+film.annoDiUscita+"</p>"
         +"<p class='card-text'>Prezzo: "+film.prezzo+"</p>"
-        +"<button class='btn btn-info' onclick=findActorByFilm("+film.id+")>Visualizza dettagli</button>"
+        +"<button class='btn btn-info col' onclick=findActorByFilm("+film.id+")>Visualizza dettagli</button>"
+        +"<a class='btn btn-success col'  href='api/attori/"+film.id+"/attori-csv'>Scarica lista attori</a>"
         +"</div></div></div></div>");
 			}
 		}
@@ -94,7 +95,8 @@ function findFilmByActor(idActor){
         "<p class='card-text'>Descrizione:</p><p class='card-text'>" + film.descrizione +"</P>"
         +"<p class='card-text'>Anno:"+film.annoDiUscita+"</p>"
         +"<p class='card-text'>Prezzo: "+film.prezzo+"</p>"
-        +"<button class='btn btn-info' onclick=findActorByFilm("+film.id+")>Visualizza dettagli</button>"
+        +"<button class='btn btn-info col' onclick=findActorByFilm("+film.id+")>Visualizza dettagli</button>"
+        +"<a class='btn btn-success col' href='api/attori/"+film.id+"/attori-csv' >Scarica lista attori</a>"
         +"</div></div></div></div>");
     }
 

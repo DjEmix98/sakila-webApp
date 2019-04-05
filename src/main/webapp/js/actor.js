@@ -17,3 +17,22 @@
 	});
 
  }
+
+
+ /*function actorDownload(idFilm){
+
+    $.post("/api/attori/" + idFilm + "/attori-csv", function(actors){
+
+        
+    });
+
+    
+ }*/
+
+ function actorDownload(idFilm) {
+
+
+    
+ }
+
+

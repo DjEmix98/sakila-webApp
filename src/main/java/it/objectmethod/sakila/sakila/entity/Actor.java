@@ -12,6 +12,7 @@ import javax.persistence.Table;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.opencsv.bean.CsvBindByName;
 
 
 @Entity
@@ -22,9 +23,10 @@ public class Actor {
 	@Column(name="actor_id")
 	private Long id;
 	
+	@CsvBindByName(column = "Nome")
 	@Column(name="first_name")
 	private String nome;
-	
+	@CsvBindByName(column = "Cognome")
 	@Column(name="last_name")
 	private String cognome;
 	
